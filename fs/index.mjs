@@ -1,9 +1,5 @@
-import {readFileSync} from "node:fs";
+import {readFile} from "node:fs/promises";    //This "promises" is important 
 
-try{
-  let content=readFileSync("files/textFile.txt");
-  console.log(`File context ${content}`);
-}catch(err){
-  console.error("You got an error", err);
-}
-
+readFile('files/textFile.txt')
+.then(content=>console.log(`File content ${content}`))
+.catch(err=>console.error(err));
