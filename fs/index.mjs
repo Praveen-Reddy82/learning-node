@@ -1,9 +1,9 @@
-import {readFile} from "node:fs";
-readFile("files/textFile.txt", (err, content)=>{
-  if(err){
-    console.error(err);  
-    return ;
-  }
- console.log(`The content of the File is as: ${content}`);
-});
+import {readFileSync} from "node:fs";
+
+try{
+  let content=readFileSync("files/textFile.txt");
+  console.log(`File context ${content}`);
+}catch(err){
+  console.error("You got an error", err);
+}
 
