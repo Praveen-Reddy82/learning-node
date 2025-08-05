@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "standard",
+    "lint:fix": "standard --fix",
+    "version": "npm -v",
+    "print": "echo \"Hi there\" ",
+    "dep:check": "npx npm-check-updates",
+    "dep:upgrade": "npx npm-check-updates -u && npm i"
   },
   "keywords": [],
   "author": "",
@@ -11,5 +17,8 @@
   "description": "",
   "devDependencies": {
     "standard": "^17.1.2"
+  },
+  "dependencies": {
+    "react": "^19.1.1"
   }
 }
