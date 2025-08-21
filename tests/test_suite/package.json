@@ -1,0 +1,13 @@
+{
+  "name": "test_suite",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "node-test": "node --test node_test/utils.test.js"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module"
+}
